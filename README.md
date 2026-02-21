@@ -28,8 +28,8 @@ cp .env.example .env
 Edit `.env` with your credentials:
 
 ```env
-GROQ_API_KEY=your_groq_api_key_here
-ALLOWED_ORIGINS=chrome-extension://your_extension_id_here
+GROQ_API_KEY=groq_api_key
+ALLOWED_ORIGINS=chrome-extension://extension_id
 PORT=3000
 ```
 
