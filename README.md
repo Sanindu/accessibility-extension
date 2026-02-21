@@ -4,16 +4,16 @@ A Chrome extension that helps visually impaired users navigate the web using voi
 
 ## How it works
 
-- **Page summary** — when you arrive on a page, the extension reads aloud a short AI-generated summary of the page content
-- **Voice navigation** — press ⌥A and say something like "click sign in" or "go to about" — the extension finds the right element and clicks it
-- **Auto-speak on navigation** — when a voice command takes you to a new page, the new page is summarized automatically
+- **Page summary** : when you arrive on a page, the extension reads aloud a short AI-generated summary of the page content
+- **Voice navigation** : press ⌥A and say something like "click sign in" or "go to about" — the extension finds the right element and clicks it
+- **Auto-speak on navigation** : when a voice command takes you to a new page, the new page is summarized automatically
 
 ## Tech stack
 
 - Chrome Extension (Manifest V3)
-- Web Speech API — voice recognition and text-to-speech
-- Groq (Llama 3.3) — page summarization and voice-to-element matching
-- Node.js + Express — backend proxy to keep API keys off the client
+- Web Speech API : voice recognition and text-to-speech
+- Groq (Llama 3.3) : page summarization and voice-to-element matching
+- Node.js + Express : backend proxy to keep API keys off the client
 
 ## Setup
 
