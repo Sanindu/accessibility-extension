@@ -55,8 +55,8 @@ In the extension popup, make sure the backend URL is set to `http://localhost:30
 
 | Action | How |
 |---|---|
-| Hear page summary | Press ⌥A (first press reads summary, then listens) |
-| Give voice command | Press ⌥A and speak — e.g. "click register" |
+| Hear page summary | Press ⌥A / Alt+A (first press reads summary, then listens) |
+| Give voice command | Press ⌥A / Alt+A and speak — e.g. "click register" |
 | Stop speech | Press Escape |
 | Trigger from popup | Click **Start voice command** or **Summarize this page** |
 
