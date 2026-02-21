@@ -1,0 +1,30 @@
+{
+  "name": "accessibility-extension-backend",
+  "version": "1.0.0",
+  "description": "Backend server for browser accessibility extension",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "accessibility",
+    "browser-extension",
+    "minimax",
+    "tts"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.6.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "groq-sdk": "^0.37.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

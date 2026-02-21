@@ -1,0 +1,60 @@
+/**
+ * Styles for accessibility extension
+ */
+
+/* Highlight style for focused elements */
+.accessibility-highlight {
+  outline: 4px solid var(--accessibility-highlight-color, #FFD700) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6) !important;
+  position: relative !important;
+  z-index: 999999 !important;
+  animation: accessibility-pulse 1.5s ease-in-out infinite;
+}
+
+/* Pulse animation for highlighted elements */
+@keyframes accessibility-pulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+}
+
+/* Visual indicator when extension is listening */
+.accessibility-listening-indicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: accessibility-fade-in 0.3s ease-in;
+}
+
+.accessibility-listening-indicator::before {
+  content: '🎤';
+  margin-right: 10px;
+}
+
+/* Fade in animation */
+@keyframes accessibility-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

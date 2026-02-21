@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Web Accessibility Assistant",
+  "version": "1.0.0",
+  "description": "AI-powered voice navigation assistant for visually impaired users",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "tts"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "https://your-backend-domain.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["utils/api.js", "utils/voice.js", "content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["utils/*.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
